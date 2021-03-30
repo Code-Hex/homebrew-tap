@@ -5,28 +5,28 @@
 class Gqldoc < Formula
   desc "The easiest way to make documents for GraphQL"
   homepage "https://github.com/Code-Hex/gqldoc"
-  version "0.0.2"
+  version "0.0.3"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/Code-Hex/gqldoc/releases/download/v0.0.2/gqldoc_0.0.2_macOS_x86_64.tar.gz"
-    sha256 "1808ff9464897202f57a43524ce21bd5e67b2b0b4e4976ebd272d04f26f91ae3"
+    url "https://github.com/Code-Hex/gqldoc/releases/download/v0.0.3/gqldoc_0.0.3_macOS_x86_64.tar.gz"
+    sha256 "f71c36511a892095417448c78b498352ceba00ee57cab5026a8c755d707492fc"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/Code-Hex/gqldoc/releases/download/v0.0.2/gqldoc_0.0.2_macOS_arm64.tar.gz"
-    sha256 "fde21cb5898defab0398b1cbfc3ab0fc936d5dff5becd255b145ab1403aa92bc"
+    url "https://github.com/Code-Hex/gqldoc/releases/download/v0.0.3/gqldoc_0.0.3_macOS_arm64.tar.gz"
+    sha256 "6a68fba11d6f9b9430be014ce1a58e09a66fdf74edc61e5c2d3172f3ba0b60dd"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/Code-Hex/gqldoc/releases/download/v0.0.2/gqldoc_0.0.2_Linux_x86_64.tar.gz"
-    sha256 "5f586e67e79b252de61666dc2a32e032f7ef0bdf5890b4832898bf6479d73352"
+    url "https://github.com/Code-Hex/gqldoc/releases/download/v0.0.3/gqldoc_0.0.3_Linux_x86_64.tar.gz"
+    sha256 "5af812f83cf9d2b51d20c1ecd809a0b27acb2fdaf1f7cdf078591f3fff84294c"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/Code-Hex/gqldoc/releases/download/v0.0.2/gqldoc_0.0.2_Linux_arm.tar.gz"
-    sha256 "336a60a4a1fdf73eb046a348b57b7a86642299ca85172578d6dc6abc6f0ab5dc"
+    url "https://github.com/Code-Hex/gqldoc/releases/download/v0.0.3/gqldoc_0.0.3_Linux_arm.tar.gz"
+    sha256 "f36d7c91024d57564e58c78dd17200c6d36b7e5fbb50b53ea5f492705a963861"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/Code-Hex/gqldoc/releases/download/v0.0.2/gqldoc_0.0.2_Linux_arm64.tar.gz"
-    sha256 "b3fb68cd0e8be2451668c72f9312ca5b6b4425d629985359ba5e281577f92a23"
+    url "https://github.com/Code-Hex/gqldoc/releases/download/v0.0.3/gqldoc_0.0.3_Linux_arm64.tar.gz"
+    sha256 "b92ac1a280ca4676cfd8cfc305cf4dbadf40861fc8816848aa8a467ffa3d3dee"
   end
 
   def install

@@ -10,7 +10,7 @@ class NeoCowsay < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Code-Hex/Neo-cowsay/releases/download/v2.0.1/cowsay_2.0.1_macOS_x86_64.tar.gz"
-      sha256 "d9110fda9a1fa3efb0c7c62aa53c908e5faa21ec7c9ceef0d670f96052795f00"
+      sha256 "1b74eb9946a04a546f3026659194c96c77ee01d0284eec8de8f9fc04d799c286"
 
       def install
         bin.install "cowsay"
@@ -20,7 +20,7 @@ class NeoCowsay < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/Code-Hex/Neo-cowsay/releases/download/v2.0.1/cowsay_2.0.1_macOS_arm64.tar.gz"
-      sha256 "00ed921bc83eaf92c1e19ce436187b43a8a10c33058b8da11977f6effef3e06a"
+      sha256 "35391725a7d14ded7de51a9791e18534356af5f0504ac65d7928915caf1a71e6"
 
       def install
         bin.install "cowsay"
@@ -33,7 +33,7 @@ class NeoCowsay < Formula
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
       url "https://github.com/Code-Hex/Neo-cowsay/releases/download/v2.0.1/cowsay_2.0.1_Linux_arm.tar.gz"
-      sha256 "27422c6ee27d557b95c5e0b677ac3fab1f7fda8b78bc3b2f038686435cbdc734"
+      sha256 "6d53b05f982ebe6b32db033a7b8d94c7ae2120b7aebe44b907186496d3b509e1"
 
       def install
         bin.install "cowsay"
@@ -43,7 +43,7 @@ class NeoCowsay < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/Code-Hex/Neo-cowsay/releases/download/v2.0.1/cowsay_2.0.1_Linux_x86_64.tar.gz"
-      sha256 "45c34bda3a8c4bcef66903248eadecfdf2ceec992fdc90eab06a9bde35a1b8f8"
+      sha256 "51af4667d7ca3beb08b400541e69d560163b18b11fb0348a5e8e2b21d8370bac"
 
       def install
         bin.install "cowsay"
@@ -53,7 +53,7 @@ class NeoCowsay < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/Code-Hex/Neo-cowsay/releases/download/v2.0.1/cowsay_2.0.1_Linux_arm64.tar.gz"
-      sha256 "6bc462340cca62ac0859836ba75ba57a49a03bb389e5b675d4b4afc84a6236dc"
+      sha256 "0245013cabb325b0d18453e7c61855c79236d2fb3c3916b679e9fcfd1192264b"
 
       def install
         bin.install "cowsay"

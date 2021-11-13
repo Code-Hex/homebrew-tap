@@ -5,12 +5,12 @@
 class NeoCowsay < Formula
   desc "Fast, funny, everyone wanted? new cowsay!!"
   homepage "https://github.com/Code-Hex/Neo-cowsay"
-  version "2.0.0"
+  version "2.0.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Code-Hex/Neo-cowsay/releases/download/v2.0.0/cowsay_2.0.0_macOS_x86_64.tar.gz"
-      sha256 "b562231c9b359f2ac00a22913eed72ee1392d1a59cda53d6773280f4aa422711"
+      url "https://github.com/Code-Hex/Neo-cowsay/releases/download/v2.0.1/cowsay_2.0.1_macOS_x86_64.tar.gz"
+      sha256 "d9110fda9a1fa3efb0c7c62aa53c908e5faa21ec7c9ceef0d670f96052795f00"
 
       def install
         bin.install "cowsay"
@@ -19,8 +19,8 @@ class NeoCowsay < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Code-Hex/Neo-cowsay/releases/download/v2.0.0/cowsay_2.0.0_macOS_arm64.tar.gz"
-      sha256 "c4ba61840b6dc30235a62878976623bc6b6fa871e1ce483dd68f1f54aa1a2d68"
+      url "https://github.com/Code-Hex/Neo-cowsay/releases/download/v2.0.1/cowsay_2.0.1_macOS_arm64.tar.gz"
+      sha256 "00ed921bc83eaf92c1e19ce436187b43a8a10c33058b8da11977f6effef3e06a"
 
       def install
         bin.install "cowsay"
@@ -32,8 +32,8 @@ class NeoCowsay < Formula
 
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/Code-Hex/Neo-cowsay/releases/download/v2.0.0/cowsay_2.0.0_Linux_arm.tar.gz"
-      sha256 "0b1c15711f5be4927fdc6551e4e1963a53cd5835ac74809df5d9ef2f4dfd2f50"
+      url "https://github.com/Code-Hex/Neo-cowsay/releases/download/v2.0.1/cowsay_2.0.1_Linux_arm.tar.gz"
+      sha256 "27422c6ee27d557b95c5e0b677ac3fab1f7fda8b78bc3b2f038686435cbdc734"
 
       def install
         bin.install "cowsay"
@@ -42,8 +42,8 @@ class NeoCowsay < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Code-Hex/Neo-cowsay/releases/download/v2.0.0/cowsay_2.0.0_Linux_x86_64.tar.gz"
-      sha256 "3775fcd42db69374de25cb89bef009b49a034a539ee901cceec4d1634d66fcf1"
+      url "https://github.com/Code-Hex/Neo-cowsay/releases/download/v2.0.1/cowsay_2.0.1_Linux_x86_64.tar.gz"
+      sha256 "45c34bda3a8c4bcef66903248eadecfdf2ceec992fdc90eab06a9bde35a1b8f8"
 
       def install
         bin.install "cowsay"
@@ -52,8 +52,8 @@ class NeoCowsay < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Code-Hex/Neo-cowsay/releases/download/v2.0.0/cowsay_2.0.0_Linux_arm64.tar.gz"
-      sha256 "e589e2f7e406311a0c00770206bd6fa4df611483e545192385b516acc377271f"
+      url "https://github.com/Code-Hex/Neo-cowsay/releases/download/v2.0.1/cowsay_2.0.1_Linux_arm64.tar.gz"
+      sha256 "6bc462340cca62ac0859836ba75ba57a49a03bb389e5b675d4b4afc84a6236dc"
 
       def install
         bin.install "cowsay"

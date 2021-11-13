@@ -6,7 +6,6 @@ class Gqldoc < Formula
   desc "The easiest way to make documents for GraphQL"
   homepage "https://github.com/Code-Hex/gqldoc"
   version "0.0.4"
-  bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/Code-Hex/gqldoc/releases/download/v0.0.4/gqldoc_0.0.4_macOS_x86_64.tar.gz"

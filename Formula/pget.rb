@@ -8,9 +8,17 @@ class Pget < Formula
   version "0.1.0"
 
   on_macos do
+    if Hardware::CPU.arm?
+      url "https://github.com/Code-Hex/pget/releases/download/v0.1.0/pget_0.1.0_macOS_arm64.tar.gz"
+      sha256 "c90b05d4a68ab6fe95af73c621cdac498427b4d75074b37290c275013740c488"
+
+      def install
+        bin.install "pget"
+      end
+    end
     if Hardware::CPU.intel?
       url "https://github.com/Code-Hex/pget/releases/download/v0.1.0/pget_0.1.0_macOS_x86_64.tar.gz"
-      sha256 "698214527591f053272c8df52bc45916c7c426b5903b50c6023548037bbee81a"
+      sha256 "5b337886ba5f6fd62d9c94b4299f094038923906fc202e86542cd5b368827e5d"
 
       def install
         bin.install "pget"
@@ -19,9 +27,17 @@ class Pget < Formula
   end
 
   on_linux do
+    if Hardware::CPU.intel?
+      url "https://github.com/Code-Hex/pget/releases/download/v0.1.0/pget_0.1.0_Linux_x86_64.tar.gz"
+      sha256 "1e065eedbf5e016b263ba2db3bb90b026a5f9a84d4a5d3567201e47b2322fe29"
+
+      def install
+        bin.install "pget"
+      end
+    end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
       url "https://github.com/Code-Hex/pget/releases/download/v0.1.0/pget_0.1.0_Linux_arm.tar.gz"
-      sha256 "673d8bae2b33fe6c72206c0edd71734a5595ca1703065b43e98c8dd0745aa274"
+      sha256 "d3e23442b305ee9b857898c93d2e426bddc048c4a7e308b45611607cb1ce8c9c"
 
       def install
         bin.install "pget"
@@ -29,15 +45,7 @@ class Pget < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/Code-Hex/pget/releases/download/v0.1.0/pget_0.1.0_Linux_arm64.tar.gz"
-      sha256 "69f292642458b0461b08e40a714e8b19e3b77348afbf110886b54b5267f6e726"
-
-      def install
-        bin.install "pget"
-      end
-    end
-    if Hardware::CPU.intel?
-      url "https://github.com/Code-Hex/pget/releases/download/v0.1.0/pget_0.1.0_Linux_x86_64.tar.gz"
-      sha256 "15860398445b358ecc837023d0f561c1a52b8b6cd717fec683a880d3a4605e84"
+      sha256 "67064089e5eed5808ccf5c1fa5aa96229b0082c2a74adaac6da84dd8adf8a503"
 
       def install
         bin.install "pget"

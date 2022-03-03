@@ -5,20 +5,20 @@
 class Gqldoc < Formula
   desc "The easiest way to make documents for GraphQL"
   homepage "https://github.com/Code-Hex/gqldoc"
-  version "0.0.5"
+  version "0.0.6"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Code-Hex/gqldoc/releases/download/v0.0.5/gqldoc_0.0.5_macOS_arm64.tar.gz"
-      sha256 "edea8a07d3ee25ba5865d7bacc820929b66f1f4a7efc9e7911319c7813ef7ac4"
+      url "https://github.com/Code-Hex/gqldoc/releases/download/v0.0.6/gqldoc_0.0.6_macOS_arm64.tar.gz"
+      sha256 "b012c0fe295e8ca98990cb83949a8803306cee4e2ad9b3421e57fd268541bda1"
 
       def install
         bin.install "gqldoc"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Code-Hex/gqldoc/releases/download/v0.0.5/gqldoc_0.0.5_macOS_x86_64.tar.gz"
-      sha256 "d0b8e5a5c6bc33a0b37e88977b016a84fe7efd3c7727b1d8b861062f89363904"
+      url "https://github.com/Code-Hex/gqldoc/releases/download/v0.0.6/gqldoc_0.0.6_macOS_x86_64.tar.gz"
+      sha256 "976551a10f58954c896da52b67645c6ef82a269071ecd931c8189d8ecf25a1b4"
 
       def install
         bin.install "gqldoc"
@@ -28,24 +28,24 @@ class Gqldoc < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/Code-Hex/gqldoc/releases/download/v0.0.5/gqldoc_0.0.5_Linux_x86_64.tar.gz"
-      sha256 "86f200df8d9731d098b0d9db42e3789a7940f26a79be3eca527ee8f21fd3aefe"
+      url "https://github.com/Code-Hex/gqldoc/releases/download/v0.0.6/gqldoc_0.0.6_Linux_x86_64.tar.gz"
+      sha256 "774ed7688c3b9af69cc1128fefb26719eafb0d84584a3492cd17b08557e73144"
 
       def install
         bin.install "gqldoc"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/Code-Hex/gqldoc/releases/download/v0.0.5/gqldoc_0.0.5_Linux_arm.tar.gz"
-      sha256 "46c1b0c40ae1c19e25265469180b4d44c6fd9d75775e7ebdb5b23935d42c9535"
+      url "https://github.com/Code-Hex/gqldoc/releases/download/v0.0.6/gqldoc_0.0.6_Linux_arm.tar.gz"
+      sha256 "87e2db385977965d70479a26195d47003df71c69149cd01b8e5124e2d0eab8db"
 
       def install
         bin.install "gqldoc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Code-Hex/gqldoc/releases/download/v0.0.5/gqldoc_0.0.5_Linux_arm64.tar.gz"
-      sha256 "1b908896f76850ef011f45081d0b20f6e47aae892259530973c38d1ace293f9a"
+      url "https://github.com/Code-Hex/gqldoc/releases/download/v0.0.6/gqldoc_0.0.6_Linux_arm64.tar.gz"
+      sha256 "c0ec10cca265d99ba1a28c4f0c10b8afbc1a9d0003fdeb99517f751bf8b3cf61"
 
       def install
         bin.install "gqldoc"

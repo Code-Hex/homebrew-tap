@@ -5,20 +5,20 @@
 class Pget < Formula
   desc "The fastest file download client"
   homepage "https://github.com/Code-Hex/pget"
-  version "0.2.0"
+  version "0.2.1"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/Code-Hex/pget/releases/download/v0.2.0/pget_ 0.2.0_macOS_arm64.tar.gz"
-      sha256 "35ce3b3ac8914a2c219c5ff13124f42d68cc5e6c4c13a8644eee4cfa4289f688"
+    if Hardware::CPU.intel?
+      url "https://github.com/Code-Hex/pget/releases/download/v0.2.1/pget_ 0.2.1_macOS_x86_64.tar.gz"
+      sha256 "d524b750efbfd782b77b61b0a16926e34d8593d496d7e5cfeb156325335a9d2b"
 
       def install
         bin.install "pget"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/Code-Hex/pget/releases/download/v0.2.0/pget_ 0.2.0_macOS_x86_64.tar.gz"
-      sha256 "f32218c5762999c0daf077a7bc27b13cfa2e7770851fef3ed2549b32e1c8f652"
+    if Hardware::CPU.arm?
+      url "https://github.com/Code-Hex/pget/releases/download/v0.2.1/pget_ 0.2.1_macOS_arm64.tar.gz"
+      sha256 "1a2780c58b0cd5b121d411bca90a8dc637441f64836743af9814ba1bdcc774a7"
 
       def install
         bin.install "pget"
@@ -28,24 +28,24 @@ class Pget < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/Code-Hex/pget/releases/download/v0.2.0/pget_ 0.2.0_Linux_x86_64.tar.gz"
-      sha256 "9d05730177c47acec61a39adad9cc0ae0da649d388e1463c95005e31e3ddcecd"
-
-      def install
-        bin.install "pget"
-      end
-    end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Code-Hex/pget/releases/download/v0.2.0/pget_ 0.2.0_Linux_arm64.tar.gz"
-      sha256 "a4d971051cf02a0a68dc41296012b710878e711eee3f053a454fc94dce99eb97"
+      url "https://github.com/Code-Hex/pget/releases/download/v0.2.1/pget_ 0.2.1_Linux_x86_64.tar.gz"
+      sha256 "a03327eb18616e523686fdc9e997c6be7d4bf313c8313d57316964a63cac3381"
 
       def install
         bin.install "pget"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/Code-Hex/pget/releases/download/v0.2.0/pget_ 0.2.0_Linux_arm.tar.gz"
-      sha256 "98ac02efaddda40206e6ae5bb0ed6a4d471712ad3aadf5832e26cac21bd769fa"
+      url "https://github.com/Code-Hex/pget/releases/download/v0.2.1/pget_ 0.2.1_Linux_arm.tar.gz"
+      sha256 "8a410ad5449833c32a9fb35cfe7859b557496d98d6bb2c2b93321bc25273e527"
+
+      def install
+        bin.install "pget"
+      end
+    end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/Code-Hex/pget/releases/download/v0.2.1/pget_ 0.2.1_Linux_arm64.tar.gz"
+      sha256 "8d8eb0a84fe5fb9ad1bc6820d73693de3f0582d044e7977db71f5992ff5883c9"
 
       def install
         bin.install "pget"
